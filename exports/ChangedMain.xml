@@ -1,0 +1,155 @@
+<Document xmlns:ns0="http://www.siemens.com/automation/Openness/SW/Interface/v4" xmlns:ns1="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v4">
+  <Engineering version="qwe">jestSila</Engineering>
+  <DocumentInfo>
+    <Created>2021-08-14T13:43:35.6459643Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16 Update 2</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>qwe</DisplayName>
+        <DisplayVersion>qwe</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16 Update 4</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>asfas</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.OB ID="qwe">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface>
+        <ns0:Sections>
+          <ns0:Section Name="Input">
+            <ns0:Member Name="Initial_Call" Datatype="Bool" Accessibility="Public" Informative="true">
+              <ns0:Comment>
+                <ns0:MultiLanguageText Lang="en-US">Initial call of this OB</ns0:MultiLanguageText>
+              </ns0:Comment>
+            </ns0:Member>
+            <ns0:Member Name="qwe" Datatype="Bool" Accessibility="Public" Informative="true">
+              <ns0:Comment>
+                <ns0:MultiLanguageText Lang="en-US">=True, if remanent data are available</ns0:MultiLanguageText>
+              </ns0:Comment>
+            </ns0:Member>
+          </ns0:Section>
+          <ns0:Section Name="Temp">
+            <ns0:Member Name="tTemp1" Datatype="Bool" />
+            <ns0:Member Name="tTemp2" Datatype="Bool" />
+          </ns0:Section>
+          <ns0:Section Name="Constant" />
+        </ns0:Sections>
+      </Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>qwe</Name>
+      <Number>qwe</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>qwe</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource>
+            <ns1:FlgNet>
+              <ns1:Parts>
+                <ns1:Access Scope="LocalVariable" UId="21">
+                  <ns1:Symbol>
+                    <ns1:Component Name="tTemp1" />
+                  </ns1:Symbol>
+                </ns1:Access>
+                <ns1:Access Scope="LocalVariable" UId="22">
+                  <ns1:Symbol>
+                    <ns1:Component Name="tTemp2" />
+                  </ns1:Symbol>
+                </ns1:Access>
+                <ns1:Part Name="Contact" UId="23" />
+                <ns1:Part Name="Coil" UId="24" />
+              </ns1:Parts>
+              <ns1:Wires>
+                <ns1:Wire UId="25">
+                  <ns1:Powerrail />
+                  <ns1:NameCon UId="23" Name="in" />
+                </ns1:Wire>
+                <ns1:Wire UId="26">
+                  <ns1:IdentCon UId="21" />
+                  <ns1:NameCon UId="23" Name="operand" />
+                </ns1:Wire>
+                <ns1:Wire UId="27">
+                  <ns1:NameCon UId="23" Name="out" />
+                  <ns1:NameCon UId="24" Name="in" />
+                </ns1:Wire>
+                <ns1:Wire UId="28">
+                  <ns1:IdentCon UId="22" />
+                  <ns1:NameCon UId="24" Name="operand" />
+                </ns1:Wire>
+              </ns1:Wires>
+            </ns1:FlgNet>
+          </NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>qwe</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="9" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

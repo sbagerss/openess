@@ -1,0 +1,153 @@
+<Document xmlns:ns0="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <SW.Blocks.CompileUnit ID="#" CompositionName="CompileUnits">
+    <AttributeList>
+      <NetworkSource>
+        <ns0:FlgNet>
+          <ns0:Parts>
+            <ns0:Access Scope="GlobalVariable" UId="21">
+              <ns0:Symbol>
+                <ns0:Component Name="zmienna1" />
+              </ns0:Symbol>
+            </ns0:Access>
+            <ns0:Access Scope="GlobalVariable" UId="22">
+              <ns0:Symbol>
+                <ns0:Component Name="Data_block_1" />
+                <ns0:Component Name="a1" />
+              </ns0:Symbol>
+            </ns0:Access>
+            <ns0:Access Scope="GlobalVariable" UId="23">
+              <ns0:Symbol>
+                <ns0:Component Name="superZmienna" />
+              </ns0:Symbol>
+            </ns0:Access>
+            <ns0:Access Scope="GlobalVariable" UId="24">
+              <ns0:Symbol>
+                <ns0:Component Name="Data_block_2" />
+                <ns0:Component Name="y1" />
+              </ns0:Symbol>
+            </ns0:Access>
+            <ns0:Access Scope="GlobalVariable" UId="25">
+              <ns0:Symbol>
+                <ns0:Component Name="Data_block_2" />
+                <ns0:Component Name="y2" />
+              </ns0:Symbol>
+            </ns0:Access>
+            <ns0:Call UId="26">
+              <ns0:CallInfo Name="blokFunkcyjny" BlockType="FB">
+                <ns0:Instance Scope="GlobalVariable" UId="27">
+                  <ns0:Component Name="DI_blokFunkcyjny_A10" />
+                </ns0:Instance>
+                <ns0:Parameter Name="in1" Section="Input" Type="Bool" />
+                <ns0:Parameter Name="in2" Section="Input" Type="Int" />
+                <ns0:Parameter Name="out1" Section="Output" Type="Bool" />
+                <ns0:Parameter Name="out2" Section="Output" Type="Int" />
+                <ns0:Parameter Name="superZmienna" Section="InOut" Type="Real" />
+              </ns0:CallInfo>
+            </ns0:Call>
+          </ns0:Parts>
+          <ns0:Wires>
+            <ns0:Wire UId="28">
+              <ns0:Powerrail />
+              <ns0:NameCon UId="26" Name="en" />
+            </ns0:Wire>
+            <ns0:Wire UId="29">
+              <ns0:IdentCon UId="21" />
+              <ns0:NameCon UId="26" Name="in1" />
+            </ns0:Wire>
+            <ns0:Wire UId="30">
+              <ns0:IdentCon UId="22" />
+              <ns0:NameCon UId="26" Name="in2" />
+            </ns0:Wire>
+            <ns0:Wire UId="31">
+              <ns0:IdentCon UId="23" />
+              <ns0:NameCon UId="26" Name="superZmienna" />
+            </ns0:Wire>
+            <ns0:Wire UId="32">
+              <ns0:NameCon UId="26" Name="out1" />
+              <ns0:IdentCon UId="24" />
+            </ns0:Wire>
+            <ns0:Wire UId="33">
+              <ns0:NameCon UId="26" Name="out2" />
+              <ns0:IdentCon UId="25" />
+            </ns0:Wire>
+          </ns0:Wires>
+        </ns0:FlgNet>
+      </NetworkSource>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="#" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="#" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="#" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="#" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>adasd</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.CompileUnit>
+  <SW.Blocks.FC ID="#">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />s
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface>
+        <ns0:Sections>
+          <ns0:Section Name="Input" />
+          <ns0:Section Name="Output" />
+          <ns0:Section Name="InOut" />
+          <ns0:Section Name="Temp" />
+          <ns0:Section Name="Constant" />
+          <ns0:Section Name="Return">
+            <ns0:Member Name="Ret_Val" Datatype="Void" Accessibility="Public" />
+          </ns0:Section>
+        </ns0:Sections>
+      </Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>funkcja1</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="#" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="#" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>komentarz bloku</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <code />
+      <MultilingualText ID="#" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="#" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>taki oto jest tytu&#322; bloku</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

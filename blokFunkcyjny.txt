@@ -1,0 +1,10 @@
+$0 - zmienna1
+$1 - Data_block_1
+$2 - a1
+$3 - superZmienna
+$4 - Data_block_2
+$5 - y1
+$6 - Data_block_2
+$7 - y2
+$8 - DI_blokFunkcyjny_A10
+$9 - komentarz linia 1

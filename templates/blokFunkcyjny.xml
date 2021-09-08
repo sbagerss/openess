@@ -1,0 +1,99 @@
+﻿<SW.Blocks.CompileUnit ID="#" CompositionName="CompileUnits">
+  <AttributeList>
+    <NetworkSource>
+      <FlgNet xmlnsFlgNetTag="">
+        <Parts>
+          <Access Scope="GlobalVariable" UId="21">
+            <Symbol>
+              <Component Name="$0" />
+            </Symbol>
+          </Access>
+          <Access Scope="GlobalVariable" UId="22">
+            <Symbol>
+              <Component Name="$1" />
+              <Component Name="$2" />
+            </Symbol>
+          </Access>
+          <Access Scope="GlobalVariable" UId="23">
+            <Symbol>
+              <Component Name="$3" />
+            </Symbol>
+          </Access>
+          <Access Scope="GlobalVariable" UId="24">
+            <Symbol>
+              <Component Name="$4" />
+              <Component Name="$5" />
+            </Symbol>
+          </Access>
+          <Access Scope="GlobalVariable" UId="25">
+            <Symbol>
+              <Component Name="$6" />
+              <Component Name="$7" />
+            </Symbol>
+          </Access>
+          <Call UId="26">
+            <CallInfo Name="blokFunkcyjny" BlockType="FB">
+              <Instance Scope="GlobalVariable" UId="27">
+                <Component Name="$8" />
+              </Instance>
+              <Parameter Name="in1" Section="Input" Type="Bool" />
+              <Parameter Name="in2" Section="Input" Type="Int" />
+              <Parameter Name="out1" Section="Output" Type="Bool" />
+              <Parameter Name="out2" Section="Output" Type="Int" />
+              <Parameter Name="superZmienna" Section="InOut" Type="Real" />
+            </CallInfo>
+          </Call>
+        </Parts>
+        <Wires>
+          <Wire UId="28">
+            <Powerrail />
+            <NameCon UId="26" Name="en" />
+          </Wire>
+          <Wire UId="29">
+            <IdentCon UId="21" />
+            <NameCon UId="26" Name="in1" />
+          </Wire>
+          <Wire UId="30">
+            <IdentCon UId="22" />
+            <NameCon UId="26" Name="in2" />
+          </Wire>
+          <Wire UId="31">
+            <IdentCon UId="23" />
+            <NameCon UId="26" Name="superZmienna" />
+          </Wire>
+          <Wire UId="32">
+            <NameCon UId="26" Name="out1" />
+            <IdentCon UId="24" />
+          </Wire>
+          <Wire UId="33">
+            <NameCon UId="26" Name="out2" />
+            <IdentCon UId="25" />
+          </Wire>
+        </Wires>
+      </FlgNet>
+    </NetworkSource>
+    <ProgrammingLanguage>LAD</ProgrammingLanguage>
+  </AttributeList>
+  <ObjectList>
+    <MultilingualText ID="#" CompositionName="Comment">
+      <ObjectList>
+        <MultilingualTextItem ID="#" CompositionName="Items">
+          <AttributeList>
+            <Culture>en-US</Culture>
+            <Text />
+          </AttributeList>
+        </MultilingualTextItem>
+      </ObjectList>
+    </MultilingualText>
+    <MultilingualText ID="#" CompositionName="Title">
+      <ObjectList>
+        <MultilingualTextItem ID="#" CompositionName="Items">
+          <AttributeList>
+            <Culture>en-US</Culture>
+            <Text>$9</Text>
+          </AttributeList>
+        </MultilingualTextItem>
+      </ObjectList>
+    </MultilingualText>
+  </ObjectList>
+</SW.Blocks.CompileUnit>
